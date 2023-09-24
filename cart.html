@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byond The Brand</title>
+    <script src="https://kit.fontawesome.com/fe88660808.js" crossorigin="anonymous"></script>
+    <link rel="Icon" type="image/png" size="32x32" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo"></a>
+    
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li id="lg-bag"><a class="active" href="cart.html"><i class="fa fa-bag-shopping"></i></a></li>
+            <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+            <a href="#" id="close"><i class="fa fa-times"></i></a>
+        </ul>
+    </div>
+    <div id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fa fa-outdent"></i>
+    </div>
+
+    </section>
+
+    <section id="page-header" class="about-header">
+        <h2>#cart</h2>
+        <p>Add your coupon code & SAVE upto 20%</p>
+    </section>
+
+     <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <td><a href=""><i class="fa-regular fa-circle-xmark"></i></a></td>
+                <td><img src="img/products/f1.jpg"></td>
+                <td>Cartoon Astronaut Shirt</td>
+                <td><i class="fa fa-naira-sign"></i>7000</td>
+                <td><input type="number" value="1"></td>
+                <td><i class="fa fa-naira-sign"></i>7000</td>
+            </tbody>
+        </table>
+     </section>
+
+     <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotals</td>
+                    <td><i class="fa fa-naira-sign"></i>7000</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong><i class="fa fa-naira-sign"></i>7000</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
+        </div>
+     </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>Lagos, Nigeria</p>
+            <p><strong>Phone: </strong>+234-9066776748 / +234-9066339095</p>
+            <p><strong>Hours: </strong>09:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Secured Payment Gateways</h4>
+            <img src="img/pay/pay.png">
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy   Soft-digitals 2022.</p>
+        </div>
+    </footer>
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
